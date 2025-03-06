@@ -1,0 +1,115 @@
+
+
+.splide__slide > div > div >  div :first-child{
+    
+    padding: 0.5rem 1rem;
+
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.splide__slide > div > div > div >:last-child{
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.splide__slide > div > div > p{
+    width: 60%;
+    font-size: 2rem;
+    color: white;
+}
+
+.content {
+    position: relative; 
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 40%; 
+    left: 40%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    place-self: end center;
+  }
+  .second-slide,.third-slide{
+    left: 10%;
+    bottom: 10%;
+  } 
+  /* .first_button_content{
+    background-color: aqua;
+  /* }  */
+
+
+ /* === SYNC SLIDER (THUMBNAIL NAVIGATION) === */
+.splide-nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.splide-nav .splide__track {
+    display: flex;
+    justify-content: center;
+}
+
+.splide-nav .splide__list {
+    display: flex;
+    gap: 10px;
+}
+
+/* Thumbnail Images */
+.splide-nav .splide__slide {
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 0.3s;
+    border-radius: 5px;
+}
+
+.splide-nav .splide__slide img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Highlight Active Thumbnail */
+.splide-nav .splide__slide.is-active {
+    border: 2px solid #ff5722;
+}
+
+/* Responsive Design for Sync Slider */
+@media (max-width: 768px) {
+    /* Adjust Thumbnail Size */
+    .splide-nav {
+        width: 90%;
+    }
+
+    .splide-nav .splide__slide img {
+        width: 80px;
+        height: 50px;
+    }
+}
