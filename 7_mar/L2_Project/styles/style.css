@@ -206,6 +206,15 @@
         width: 50%;
         max-width: 400px;
     }
+     .prev-btn{
+    position: relative;
+        right: 240%;
+        
+}
+.next-btn{
+    position: relative;
+    left: 30%;
+}
 }
 
 @media (max-width: 768px) {
@@ -260,6 +269,22 @@
     .carousel-dots {
         bottom: 1rem;
     }
+     .carousel-nav {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            top:60%;
+        }
+         .prev-btn{
+    position: relative;
+        right:225%;
+        
+}
+.next-btn{
+    position: relative;
+    left: -15%;
+}
 }
 
 @media (max-width: 480px) {
@@ -318,4 +343,5 @@
         bottom: 0.5rem;
         right: 0.5rem;
     }
+    
 }
