@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Exquisite Wristwatch",
+    "brand": "Gold Luxury",
+    "some": "Choose Us",
+    "description": "Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship -watch",
+    "price": "$499.00",
+    "image": "/images/Group 4.png",
+    "backgroundColor": "#f9d5a7"
+  },
+  {
+    "id": 2,
+    "name": "Dainty Timepieces",
+    "brand": "Luxury Co",
+    "some": "Choose Us",
+    "description": "Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship -watch",
+    "price": "$469.00",
+    "image": "/images/Group 5.png",
+    "backgroundColor": "#d2d2d2"
+  },
+  {
+    "id": 3,
+    "name": "Elegant Timepieces",
+    "brand": "Luxury Co",
+    "some": "Choose Us",
+    "description": "Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship -watch",
+    "price": "$529.00",
+    "image": "/images/Group 6.png",
+    "backgroundColor": "#8ed1a3"
+  },
+  {
+    "id": 4,
+    "name": "Refined Timepieces",
+    "brand": "Luxury Co",
+    "some": "Choose Us",
+    "description": "Discover the Perfect Watch for Every Occasion and Elevate Your Style with Timeless Elegance and Precision Craftsmanship -watch",
+    "price": "$599.00",
+    "image": "/images/Group 7.png",
+    "backgroundColor": "#f8a2a2"
+  }
+]

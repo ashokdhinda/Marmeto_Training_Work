@@ -61,11 +61,12 @@ function createCarouselSlides() {
             <div class="product-info">
                 <h2>${slide.name}</h2>
                 <h3>${slide.brand},  <span><h4> ${slide.some}</h4></span></h3>
-                <p>${slide.description} </p>
+                <p>${slide.description}  </p>
                 <div class="product-price">${slide.price}</div>
             </div>
             <img src="${slide.image}" alt="${slide.name}" class="product-image">
             
+
         `;
 
     carouselContainer.appendChild(slideElement);
@@ -180,3 +181,4 @@ style.innerHTML = `
     }
 `;
 document.head.appendChild(style);
+
