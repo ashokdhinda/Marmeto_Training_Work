@@ -65,7 +65,12 @@ function createCarouselSlides() {
                 <div class="product-price">${slide.price}</div>
             </div>
             <img src="${slide.image}" alt="${slide.name}" class="product-image">
-            
+             
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
 
         `;
 
