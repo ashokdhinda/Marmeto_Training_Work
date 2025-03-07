@@ -1,0 +1,315 @@
+
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            transition: background-color 0.8s ease;
+        }
+
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+             
+
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+             font-weight: bold;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+            font-size: bold;
+        }
+
+        .cta-button {
+            background-color: #222;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Carousel section styles */
+        .carousel-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .carousel-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .carousel-slide.active {
+            opacity: 1;
+        }
+
+        .product-image {
+            width: 40%;
+            max-width: 500px;
+            object-fit: contain;
+        }
+
+        .product-info {
+            width: 50%;
+            padding: 2rem;
+            color: #333;
+        }
+
+        .product-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color:white;
+        }
+
+        .product-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: normal;
+            color: white;
+            display:flex;
+            justify-content: flex-start;
+            position: relative;
+            margin: auto;
+            h4{
+                color: #000;
+                margin-bottom: 10px;
+               
+            }
+           
+        }
+
+        .product-info p {
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+
+        .product-price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .carousel-dots {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .dot.active {
+            background-color: white;
+        }
+
+        /* Carousel navigation */
+        .carousel-nav {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+        }
+
+        .carousel-nav button {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header {
+        padding: 1rem;
+    }
+
+    .product-info {
+        width: 60%;
+        padding: 1.5rem;
+    }
+
+    .product-info h2 {
+        font-size: 2rem;
+    }
+
+    .product-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .product-price {
+        font-size: 1.8rem;
+    }
+
+    .product-image {
+        width: 50%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .carousel-slide {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-info {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .product-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .product-info h3 {
+        font-size: 1rem;
+    }
+
+    .product-price {
+        font-size: 1.5rem;
+    }
+
+    .product-image {
+        width: 60%;
+        max-width: 350px;
+    }
+
+    .carousel-nav {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .carousel-dots {
+        bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: row;
+        /* align-items: center; */
+        /* text-align: center; */
+        /* padding: 1rem; */
+        font-size: 10px;
+    }
+.logo{
+    font-size: 10px;
+    img{
+        font-size: 10px;
+    }
+}
+    nav ul {
+     display: flex;
+     flex-direction: row;
+     gap: 2px;
+     font-size: 12
+     
+     px;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    .product-info {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .product-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-info h3 {
+        font-size: 0.9rem;
+    }
+
+    .product-price {
+        font-size: 1.3rem;
+    }
+
+    .product-image {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .carousel-dots {
+        bottom: 0.5rem;
+    }
+
+    .carousel-nav {
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+}
