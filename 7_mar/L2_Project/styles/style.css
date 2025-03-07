@@ -177,12 +177,12 @@
 
 .prev-btn{
     position: relative;
-    right: 470%;
+    right: 430%;
 }
-/* .next-btn {
+.next-btn {
     position: relative;
-    left: -30px;
-} */
+    left: -100px;
+}
 /* Responsive Design */
 @media (max-width: 1024px) {
     header {
@@ -212,12 +212,12 @@
     }
      .prev-btn{
     position: relative;
-        right: 300%;
+        right: 240%;
         
 }
 .next-btn{
     position: relative;
-    left:3%;
+    left:30%;
 }
 }
 
@@ -284,12 +284,12 @@
         }
          .prev-btn{
     position: relative;
-        right:375%;
+        right:400%;
         
 }
 .next-btn{
     position: relative;
-    left: -125%;
+    left: -135%;
 }
   
 }
@@ -350,17 +350,13 @@
         bottom: 0.5rem;
         right: 0.5rem;
     }
-    
+           .prev-btn{
+    position: relative;
+       right: -25%;
+        
 }
- .social-icons {
-            display: flex;
-            gap: 15px;
-        }
-        .social-icons a {
-            text-decoration: none;
-            font-size: 24px;
-            color: #000;
-        }
-        .social-icons a:hover {
-            color: #007bff;
-        }
+.next-btn{
+    position: relative;
+   left: -270%;
+}
+}
